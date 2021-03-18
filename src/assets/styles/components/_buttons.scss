@@ -1,0 +1,21 @@
+.btn__wrapper {
+  height: 100%;
+}
+.btn {
+  min-width: $button__width;
+  min-height: $button__height;
+  background-color: $button__color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color__bright;
+  border-radius: $button__radius;
+  line-height: 0px;
+  transition: 0.3s;
+  &:hover {
+    color: $color__bright;
+    -webkit-box-shadow: 0px 10px 15px -7px #6d90b5;
+    box-shadow: 0px 10px 15px -10px #6d90b5;
+  }
+}
