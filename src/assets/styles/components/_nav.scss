@@ -118,7 +118,7 @@
         }
         &:after {
           content: "";
-          bottom: -7px;
+          bottom: -8px;
           left: 0px;
           position: absolute;
           width: 100%;
@@ -126,7 +126,7 @@
           min-height: 0px;
           background-color: $color__link-hover;
           @media #{$breakpoint-md-up} {
-            bottom: 0;
+            bottom: -1px;
           }
         }
       }

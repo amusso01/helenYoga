@@ -1,0 +1,54 @@
+.block-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 520px;
+  position: relative;
+  @media #{$breakpoint-sm-up} {
+    grid-template-columns: 1fr 1fr;
+  }
+  &__right {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    display: none;
+    @media #{$breakpoint-sm-up} {
+      position: inherit;
+      display: block;
+    }
+  }
+  &__left {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media #{$breakpoint-sm-up} {
+      padding: 0 2rem;
+    }
+    @media #{$breakpoint-md-up} {
+      padding: 0 4rem;
+    }
+    h1,
+    p {
+      color: $color__bright;
+    }
+    h1 {
+      font-size: 55px;
+      @media #{$breakpoint-md-up} {
+        font-size: 65px;
+      }
+    }
+    p {
+      line-height: 33px;
+      @media #{$breakpoint-sm-up} {
+        padding-right: 50px;
+      }
+    }
+    .btn {
+      align-self: flex-start;
+      margin-top: 34px;
+      span {
+        margin-left: 15px;
+      }
+    }
+  }
+}

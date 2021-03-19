@@ -6,16 +6,25 @@
   min-height: $button__height;
   background-color: $button__color;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: $color__bright;
   border-radius: $button__radius;
   line-height: 0px;
   transition: 0.3s;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 900;
   &:hover {
     color: $color__bright;
     -webkit-box-shadow: 0px 10px 15px -7px #6d90b5;
     box-shadow: 0px 10px 15px -10px #6d90b5;
+  }
+  &.btn-white {
+    background-color: $color__bright;
+    color: $color__text;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }

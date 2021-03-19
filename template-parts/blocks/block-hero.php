@@ -75,9 +75,24 @@
     ?>
 
     <section class="block-hero">
-       
+       <div class="block-hero__left" style="background: transparent linear-gradient(76deg, <?php echo $overlay[0]['color'] ?> 0%, <?php echo $overlay[1]['color']  ?> 49%, <?php echo $overlay[2]['color']  ?> 100%) 0% 0% no-repeat padding-box;">
+            <h1><?php echo $title ?></h1>
+            <p><?php echo $text ?></p>
+            <?php if($hasButton) : ?>
+            <a class="btn btn-white" href="<?php echo $isButtonExternal ? $button['url'] : '#schedule' ?>"><?php echo $isButtonExternal ? $button[''] : 'JUMP TO SCHEDULE' ?> 
+            <?php if(!$isButtonExternal): ?>
+                <span><i><?php get_template_part( 'svg-template/svg', 'down-arrow' ) ?></i></span>
+            <?php endif; ?>
+            </a>
+            <?php endif; ?>
+       </div>
+       <div class="block-hero__right" style="background-image:url(<?php echo $singleImage['url'] ?>);">
+           
+       </div>
     </section>
 
     <?php endif; ?>
 <?php
  }
+
+ 

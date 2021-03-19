@@ -1,0 +1,35 @@
+.block-text-image {
+  padding: 6rem 0rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 8rem 5rem;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media #{$breakpoint-sm-up} {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+    img {
+      max-width: 500px;
+    }
+    .block-text-image__box {
+      justify-self: center;
+    }
+    .big-text {
+      margin-bottom: 30px;
+      @media #{$breakpoint-sm-up} {
+        padding-right: 80px;
+      }
+      h2 {
+        p {
+          color: inherit;
+          line-height: 45px;
+        }
+      }
+    }
+    .small-text {
+      line-height: 30px;
+    }
+  }
+}
