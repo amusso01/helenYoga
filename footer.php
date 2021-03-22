@@ -37,6 +37,8 @@
 
 </div><!-- #page -->
 
+<?php get_template_part( 'components/footer/banner' ) ?>
+
 <?php wp_footer(); ?>
 
 </body>

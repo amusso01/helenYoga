@@ -19,8 +19,8 @@
 
  	$result = acf_register_block(array(
  		'name'				     => 'fd_timetable',
- 		'title'				     => __('Text and image'),
- 		'description'		   => __('Text and image block'),
+ 		'title'				     => __('Timetable'),
+ 		'description'		   => __('Timetable block'),
  		'render_callback'	 => 'foundry_gutenblock_timetable',
  		'category'		     => 'fd-category', // common, formatting, layout, widgets, embed
  		'icon' => array(
@@ -33,7 +33,7 @@
             'mode'              => 'edit',
             'align'             => 'full',
             ),
- 		'keywords'		     => ['fd', 'timetable', 'image']
+ 		'keywords'		     => ['fd', 'timetable']
  	));
  }
 
@@ -48,7 +48,9 @@
 
    
     // Get Vars
-
+    $title = get_field('timetable_title');
+    $dayTime = get_field('day_and_time');
+    $price = get_field('price')
    
 
     
@@ -57,8 +59,15 @@
 
     ?>
 
-    <section class="block-text-image"  style="background: transparent linear-gradient(79deg, <?php echo $backgroudGradient[0]['color'] ?> 0%,  <?php echo $backgroudGradient[1]['color'] ?> 49%,  <?php echo $backgroudGradient[2]['color'] ?> 100%) 0% 0% no-repeat padding-box;">
-   
+    <section class="block-timetable"  style="background:transparent linear-gradient(180deg, <?php echo $backgroudGradient[0]['color'] ?> 0%, <?php echo $backgroudGradient[1]['color'] ?> 49%, <?php echo $backgroudGradient[2]['color'] ?> 100%) 0% 0% no-repeat padding-box;">
+        <div class="timetable_container content-block">
+            <p class="smallTitle" style="<?php echo $isTextWhite ? 'color:white' : '' ?>">Weekly timetable</p>
+            <p style="<?php echo $isTextWhite ? 'color:white' : '' ?>" class="title"><?php echo $title ?></p>
+            <p class="daytime" style="<?php echo $isTextWhite ? 'color:white' : '' ?>"><?php echo $dayTime ?></p>
+            <div class="line"></div>
+            <p class="price" style="<?php echo $isTextWhite ? 'color:white' : '' ?>"><?php echo $price ?></p>
+            <a href="<?php echo site_url('/contact') ?>" class="btn">GET IN TOUCH</a>
+        </div>
     </section>
 
 <?php

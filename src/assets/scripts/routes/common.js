@@ -1,6 +1,9 @@
 import smoothscroll from "smoothscroll-polyfill";
 import lozad from "lozad";
 import hamburger from "./../part/hamburger";
+import slider from "./../part/slider"
+import homeSlider from "./../part/homeSlider"
+import banner from "./../part/banner"
 
 export default {
 	init() {
@@ -13,20 +16,29 @@ export default {
 		hamburger();
 
 		// Lazy load image with lozad.js https://github.com/ApoorvSaxena/lozad.js
-		const lazyObserver = lozad(".lozad", {
-			load: function (el) {
-				el.src = el.dataset.src;
-				// On load add fade class (animation to be written)
-				// el.onload = function() {
-				// 	el.classList.add('fade')
-				// }
-			},
-		}); // lazy loads elements with default selector as '.lozad'
+		const lazyObserver = lozad(); // lazy loads elements with default selector as '.lozad'
 		lazyObserver.observe();
 
-		const coolImage = document.querySelector(".lazy");
-		// ... trigger the load of a image before it appears on the viewport
-		lazyObserver.triggerLoad(coolImage);
+
+		 // SLIDER
+		 const swipe = document.getElementById('fdSlider');
+		 if (typeof(swipe) != 'undefined' && swipe != null)
+		 {
+		   slider();
+		 }
+		 // SLIDER
+		 const heroSlider = document.getElementById('homeSlider');
+		 if (typeof(heroSlider) != 'undefined' && heroSlider != null)
+		 {
+		   homeSlider();
+		 }
+
+		//  BANNER
+		const siteBanner = document.getElementById('siteBanner');
+		if (typeof(siteBanner) != 'undefined' && siteBanner != null)
+		{
+		  banner();
+		}
 	},
 
 	finalize() {

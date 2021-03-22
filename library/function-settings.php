@@ -253,11 +253,15 @@ function we_login_logo() {
 			font-family: <?php echo $fontFamily ?>!important;
 		<?php endif; ?>
 		}
+		body.login{
+			background-color:#E9F0F7;
+		}
 	
         #login h1 a, .login h1 a {
             background-image: url( <?php echo $customLogo ?>);
 			background-repeat: no-repeat;
-			background-size: 70px;
+			background-size: 170px;
+			width:100%;
 			<?php if($fontFamily): ?>
 			font-family: <?php echo $fontFamily ?>!important;
 			<?php endif; ?>
@@ -276,8 +280,14 @@ function we_login_logo() {
 		body.login div#login .message{
 			border: 2px solid <?php echo $mainColor ?>;
 		}
+		body.login div#login form#loginform p.submit input#wp-submit{
+			background-color: <?php echo $mainColor ?>;
+			color:white;
+			border:none;
+		}
 		body.login div#login form#loginform p.submit input#wp-submit:hover{
-			background-color: #f5f5f5;
+			background-color: #1da58c;
+
 		}
         body.login div#login p#nav a:hover {
             color: <?php echo $mainColor ?>;
@@ -301,3 +311,23 @@ function we_login_logo() {
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'we_login_logo' );
+
+/* 2.7 EDITOR STYLE
+/–––––––––––––––––––––––––––––––––*/
+
+add_action( 'after_setup_theme', 'misha_gutenberg_css' );
+ 
+function misha_gutenberg_css(){
+ 
+	add_theme_support( 'editor-styles' ); // if you don't add this line, your stylesheet won't be added
+	add_editor_style( 'gutten-style/style-editor.css' ); // tries to include style-editor.css directly from your theme folder
+ 
+}
+
+/* 2.8 ACF SET UP OPTION PAGE
+/–––––––––––––––––––––––––––––––––*/
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

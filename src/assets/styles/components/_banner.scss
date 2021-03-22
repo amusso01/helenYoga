@@ -1,0 +1,30 @@
+.fd-banner {
+  position: fixed;
+  bottom: 50px;
+  width: 90vw;
+  background-color: $color__bright;
+  z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 68px;
+  box-shadow: 0px 3px 10px #6a8db06c;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  padding: 0px 2rem;
+  justify-content: space-between;
+  pointer-events: none;
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  p {
+    font-size: 17px;
+  }
+  .bannerClose {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

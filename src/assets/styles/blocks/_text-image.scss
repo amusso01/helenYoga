@@ -6,21 +6,22 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 50px;
     @media #{$breakpoint-sm-up} {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 80px;
+      column-gap: 40px;
     }
-    img {
-      max-width: 500px;
+    @media #{$breakpoint-md-up} {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+    }
+    @media #{$breakpoint-lg-up} {
+      column-gap: 90px;
     }
     .block-text-image__box {
       justify-self: center;
     }
     .big-text {
       margin-bottom: 30px;
-      @media #{$breakpoint-sm-up} {
-        padding-right: 80px;
-      }
       h2 {
         p {
           color: inherit;

@@ -1,4 +1,5 @@
-//Custom styles start here
+// SWIPER import
+@import "~swiper/swiper";
 
 // Common
 @import "common/reset";
@@ -16,10 +17,13 @@
 @import "components/buttons";
 @import "components/nav";
 @import "components/footer";
+@import "components/banner";
 
 // Blocks
 @import "blocks/page-hero";
 @import "blocks/text-image";
+@import "blocks/timetable";
+@import "blocks/testimonials";
 
 // Templates
 @import "templates/page";

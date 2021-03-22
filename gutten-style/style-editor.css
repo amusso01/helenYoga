@@ -1,0 +1,41 @@
+.block-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.block-hero__right {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.block-text-image__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.timetable_container {
+  text-align: center;
+}
+
+.btn {
+  min-width: 168px;
+  min-height: 50px;
+  background-color: #1ebea3;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0px;
+  transition: 0.3s;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 900;
+}
+.btn-white {
+  background-color: white;
+  color: #1ebea3;
+  padding-left: 35px;
+  padding-right: 35px;
+}

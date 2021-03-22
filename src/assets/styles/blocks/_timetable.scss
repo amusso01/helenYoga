@@ -1,0 +1,44 @@
+.block-timetable {
+  padding: 70px 0px;
+  .timetable_container {
+    text-align: center;
+    @media #{$breakpoint-sm-up} {
+      max-width: 65vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .smallTitle {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .title {
+      font-family: $header__fontname;
+      font-size: 37px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      @media #{$breakpoint-sm-up} {
+        ont-size: 50px;
+      }
+    }
+    .daytime {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      line-height: 35px;
+    }
+    .line {
+      width: 2vw;
+      height: 5px;
+      background-color: #6d90b5;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .price {
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}

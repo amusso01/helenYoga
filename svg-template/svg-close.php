@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.547" height="14.547" viewBox="0 0 14.547 14.547"><g data-name="Group 118" fill="none" stroke="#1ebea3" stroke-width="2"><path data-name="Line 52" d="M13.84.707L.707 13.84"/><path data-name="Line 51" d="M.707.707L13.84 13.84"/></g></svg>

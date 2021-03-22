@@ -58,7 +58,7 @@
     }
 
     if($isButtonExternal){
-        $button = get_field('hero_button');
+        $button = get_field('button');
     }
 
     // Return HTML
@@ -66,7 +66,38 @@
     <?php if($isSlider) : 
     // Get Vars
     $images = get_field('slider_images');
+    // dd($button)
     ?>
+
+    <section class="block-hero">
+       <div class="block-hero__left" style="background: transparent linear-gradient(76deg, <?php echo $overlay[0]['color'] ?> 0%, <?php echo $overlay[1]['color']  ?> 49%, <?php echo $overlay[2]['color']  ?> 100%) 0% 0% no-repeat padding-box;">
+            <?php if($hasQuote) :?>
+                <p class="quote"><?php echo $quote['text'] ?></p>
+                <p class="author"><?php echo $quote['author'] ?></p>
+            <?php else :?>
+                <h1><?php echo $title ?></h1>
+                 <p><?php echo $text ?></p> 
+            <?php endif ?>
+            <?php if($hasButton) : ?>
+            <a class="btn btn-white" href="<?php echo $isButtonExternal ? $button['url'] : '#schedule' ?>"><?php echo $isButtonExternal ? $button['title'] : 'JUMP TO SCHEDULE' ?> 
+            <?php if(!$isButtonExternal): ?>
+                <span><i><?php get_template_part( 'svg-template/svg', 'down-arrow' ) ?></i></span>
+            <?php endif; ?>
+            </a>
+            <?php endif; ?>
+       </div>
+       <div class="block-hero__right swiper-container" id="homeSlider" >
+
+            <div class="swiper-wrapper">
+                <?php foreach($images as $image) : ?>
+                        <div class="testimonial-slide swiper-slide" style="background-image:url('<?php echo $image['image'] ?>');" >
+                            <p class="text" ><?php echo $image['overlay_text'] ?></p>
+                        </div>
+                <?php endforeach ?>
+            </div>
+
+       </div>
+    </section>
 
 
     <?php else : 
@@ -76,8 +107,14 @@
 
     <section class="block-hero">
        <div class="block-hero__left" style="background: transparent linear-gradient(76deg, <?php echo $overlay[0]['color'] ?> 0%, <?php echo $overlay[1]['color']  ?> 49%, <?php echo $overlay[2]['color']  ?> 100%) 0% 0% no-repeat padding-box;">
-            <h1><?php echo $title ?></h1>
-            <p><?php echo $text ?></p>
+             <?php if($hasQuote) :?>
+                <p class="quote"><?php echo $quote['text'] ?></p>
+                <p class="author"><?php echo $quote['author'] ?></p>
+            <?php else :?>
+                <h1><?php echo $title ?></h1>
+                 <p><?php echo $text ?></p> 
+            <?php endif ?>
+      
             <?php if($hasButton) : ?>
             <a class="btn btn-white" href="<?php echo $isButtonExternal ? $button['url'] : '#schedule' ?>"><?php echo $isButtonExternal ? $button[''] : 'JUMP TO SCHEDULE' ?> 
             <?php if(!$isButtonExternal): ?>

@@ -10,11 +10,6 @@
 get_header();
 ?>
 
-<section class="site-hero">
-	
-	<?php get_template_part( 'components/front/hero' ); ?>
-
-</section>
 
 <main class="main homepage-main" role="main">
 
@@ -22,7 +17,7 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); // @codingStandardsIgnoreLine ?>
 
-			<?php get_template_part( 'template-parts/content', 'front' ) ?>
+			<?php the_content() ?>
 
 		<?php endwhile; ?>
 

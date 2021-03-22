@@ -65,7 +65,7 @@
         <section class="block-text-image"  style="background-color:<?php echo $backgroundColor ?>">
     <?php endif; ?>
         <div class="block-text-image__container content-block" >
-            <div class="block-text-image__box" style="<?php echo $isTextCenter ? 'align-self:center;' : '' ?><?php echo $position == 'left' ? 'grid-column-start: 2;  grid-column-end: 3; order:2' : '' ?>">
+            <div class="block-text-image__box" style="<?php echo $isTextCenter ? 'align-self:center;' : '' ?><?php echo $position == 'left' ? ' order:2' : '' ?>">
             <?php if($text['big_text']) : ?>
                 <div class="big-text">
                     <h2 style="<?php echo $isTextWhite ? 'color:white' : '' ?>" ><?php echo $text['big_text'] ?></h2>
@@ -75,7 +75,7 @@
                     <p style="<?php echo $isTextWhite ? 'color:white' : '' ?>"><?php echo $text['normal_text'] ?></p>
                 </div>
             </div>
-            <div class="block-text-image__box" style="<?php echo $position == 'left' ? 'grid-column-start: 1;  grid-column-end: 2; order:1' : '' ?>">
+            <div class="block-text-image__box" style="<?php echo $position == 'left' ? ' order:1' : '' ?>">
                 <img src="<?php echo $image['url']  ?>" alt="<?php echo $image['title'] ?>">
             </div>
         </div>
