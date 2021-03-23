@@ -84,3 +84,4 @@ require get_template_directory().'/template-parts/blocks/block-hero.php';
 require get_template_directory().'/template-parts/blocks/block-text-image.php';
 require get_template_directory().'/template-parts/blocks/block-timetable.php';
 require get_template_directory().'/template-parts/blocks/block-testimonial.php';
+require get_template_directory().'/template-parts/blocks/block-box-info.php';
