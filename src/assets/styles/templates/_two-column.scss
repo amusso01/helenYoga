@@ -1,0 +1,79 @@
+.two-column-main {
+  padding-top: 80px;
+  h1 {
+    margin-bottom: 25px;
+  }
+  .two-column-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    @media #{$breakpoint-md-up} {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .two-column__image {
+    padding: 0px 60px 0px 40px;
+    display: none;
+    @media #{$breakpoint-md-up} {
+      padding-right: 40px;
+      display: block;
+    }
+  }
+  .two-column__content {
+    padding-right: 0px;
+    @media #{$breakpoint-md-up} {
+      padding-right: 40px;
+    }
+  }
+  .wp-block-contact-form-7-contact-form-selector {
+    .wpcf7-form {
+      label {
+        width: 100%;
+        margin-bottom: 25px;
+        display: inline-block;
+        font-size: 15px;
+        input,
+        select,
+        textarea {
+          width: 100%;
+          border: none;
+          background-color: #e9f0f7;
+          min-height: 50px;
+          font-weight: 900;
+          font-size: 15px;
+          padding: 0px 15px;
+          color: $color__text;
+          margin-top: 10px;
+        }
+      }
+      .privacy {
+        font-size: 13px;
+        color: #505050;
+        a {
+          color: $color__blue;
+          font-size: 13px;
+          &:hover {
+            text-decoration: underline;
+            color: $color__blue;
+          }
+        }
+      }
+      .wpcf7-submit {
+        border: none;
+        background: $color__link-hover;
+        color: $color__bright;
+        font-size: 15px;
+        font-weight: 900;
+        min-height: 50px;
+        padding: 0px 20px;
+        margin-bottom: 25px;
+        &:hover {
+          cursor: pointer;
+          color: $color__bright;
+          -webkit-box-shadow: 0px 10px 15px -7px #6d90b5;
+          box-shadow: 0px 10px 15px -10px #6d90b5;
+        }
+      }
+    }
+  }
+}

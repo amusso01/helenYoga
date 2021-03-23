@@ -38,7 +38,7 @@
 			<?php get_template_part( 'components/header/logo' ); ?>
 			<div class="site-header__block-navigation">
 				<?php get_template_part( 'components/navigation/primary' ); ?>
-				<a href="<?php site_url('/') ?>" class="btn">GET IN TOUCH</a>
+				<a href="<?php echo site_url('/get-in-touch') ?>" class="btn">GET IN TOUCH</a>
 			</div>
 	
 			<?php get_template_part( 'components/header/hamburger' ); ?>

@@ -48,7 +48,8 @@ $color__blue: #4788c0;
 
 // Gutenberg color options
 // -- see editor-color-palette in functions.php
-$colors: (text, $color__text), (blue, $color__blue), (bright, $color__bright);
+$colors: (text, $color__text), (blue, $color__blue), (bright, $color__bright),
+  (teal, $color__link-hover), (dark, $color__dark);
 
 /* Color Options
 --------------------------------------------- */

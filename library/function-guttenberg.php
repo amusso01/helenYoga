@@ -44,6 +44,16 @@ function foundry_block_setup() {
 			'name'  => __( 'White', 'foundry' ),
 			'slug'  => 'bright',
 			'color' => '#ffffff',
+		),
+		array(
+			'name'  => __( 'Teal', 'foundry' ),
+			'slug'  => 'teal',
+			'color' => '#1ebea3',
+		),
+		array(
+			'name'  => __( 'Dark', 'foundry' ),
+			'slug'  => 'dark',
+			'color' => '#353434',
 		)
 	) );
 }
@@ -85,3 +95,4 @@ require get_template_directory().'/template-parts/blocks/block-text-image.php';
 require get_template_directory().'/template-parts/blocks/block-timetable.php';
 require get_template_directory().'/template-parts/blocks/block-testimonial.php';
 require get_template_directory().'/template-parts/blocks/block-box-info.php';
+require get_template_directory().'/template-parts/blocks/block-schedule.php';

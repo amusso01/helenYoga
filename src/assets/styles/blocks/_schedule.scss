@@ -1,0 +1,38 @@
+.block-schedule {
+  &__title {
+    padding: 12px 30px;
+    p {
+      font-size: 18px;
+    }
+  }
+  &__body {
+    padding: 30px 30px;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    > p {
+      margin-bottom: 10px;
+    }
+  }
+  &__prices {
+    p {
+      line-height: 28px;
+    }
+  }
+  &__dayTime {
+    > p {
+      margin-bottom: 9px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .line {
+    width: 50px;
+    height: 3px;
+    background-color: $color__text;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}

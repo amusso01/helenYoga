@@ -12,6 +12,10 @@ export default function slider() {
         pagination: {
           el: '.swiper-pagination',
         },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: true,
+        },
       
         // Navigation arrows
         navigation: {

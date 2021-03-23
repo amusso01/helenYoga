@@ -28,3 +28,22 @@
     padding-right: 35px;
   }
 }
+
+// GUTTEN BUTTON
+.wp-block-button__link {
+  min-width: $button__width;
+  min-height: $button__height;
+  display: inline-block;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: $color__bright;
+    -webkit-box-shadow: 0px 10px 15px -7px #6d90b5;
+    box-shadow: 0px 10px 15px -10px #6d90b5;
+  }
+}

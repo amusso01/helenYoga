@@ -7,17 +7,14 @@
   background-position: right;
   background-size: cover;
 }
-
 .block-text-image__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
 }
-
 .timetable_container {
   text-align: center;
 }
-
 .btn {
   min-width: 168px;
   min-height: 50px;
@@ -39,7 +36,6 @@
   padding-left: 35px;
   padding-right: 35px;
 }
-
 .block-box-info {
   display: grid;
   justify-items: center;
@@ -50,7 +46,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;
 }
-
 .testimonial_container {
   padding-top: 70px;
   padding-bottom: 65px;
@@ -73,4 +68,21 @@
 .testimonial_container .swiper-button-prev {
   left: 0px;
   transform: rotate(180deg) translateY(50%);
+}
+.testimonial-slide {
+  border-bottom: 1px solid white;
+}
+.block-schedule__title {
+  padding: 12px 30px;
+}
+.block-schedule__body {
+  padding: 30px 30px;
+}
+
+.block-schedule .line {
+  width: 50px;
+  height: 3px;
+  background-color: #4b90d4;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
