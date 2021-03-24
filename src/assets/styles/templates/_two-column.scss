@@ -1,7 +1,11 @@
 .two-column-main {
-  padding-top: 80px;
+  padding-top: 40px;
+  @media #{$breakpoint-md-up} {
+    padding-top: 80px;
+  }
   h1 {
     margin-bottom: 25px;
+    line-height: 65px;
   }
   .two-column-container {
     display: grid;
@@ -23,6 +27,9 @@
     padding-right: 0px;
     @media #{$breakpoint-md-up} {
       padding-right: 40px;
+    }
+    iframe {
+      max-width: 100%;
     }
   }
   .wp-block-contact-form-7-contact-form-selector {

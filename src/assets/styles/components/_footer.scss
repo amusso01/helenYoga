@@ -6,6 +6,7 @@ footer.site-footer {
 .site-footer__inner {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: none;
   @media #{$breakpoint-sm-up} {
     grid-template-columns: 4fr 1fr;
   }

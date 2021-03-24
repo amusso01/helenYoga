@@ -8,6 +8,7 @@ html {
   -webkit-font-smoothing: antialiased;
   font-size: $text__p;
   font-weight: $font__weight;
+  scroll-behavior: smooth;
 }
 
 /**

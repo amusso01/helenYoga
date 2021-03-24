@@ -59,14 +59,14 @@
 
     ?>
 
-    <section class="block-timetable"  style="background:transparent linear-gradient(180deg, <?php echo $backgroudGradient[0]['color'] ?> 0%, <?php echo $backgroudGradient[1]['color'] ?> 49%, <?php echo $backgroudGradient[2]['color'] ?> 100%) 0% 0% no-repeat padding-box;">
+    <section class="block-timetable" id="schedule"  style="background:transparent linear-gradient(180deg, <?php echo $backgroudGradient[0]['color'] ?> 0%, <?php echo $backgroudGradient[1]['color'] ?> 49%, <?php echo $backgroudGradient[2]['color'] ?> 100%) 0% 0% no-repeat padding-box;">
         <div class="timetable_container content-block">
             <p class="smallTitle" style="<?php echo $isTextWhite ? 'color:white' : '' ?>">Weekly timetable</p>
             <p style="<?php echo $isTextWhite ? 'color:white' : '' ?>" class="title"><?php echo $title ?></p>
             <p class="daytime" style="<?php echo $isTextWhite ? 'color:white' : '' ?>"><?php echo $dayTime ?></p>
             <div class="line"></div>
             <p class="price" style="<?php echo $isTextWhite ? 'color:white' : '' ?>"><?php echo $price ?></p>
-            <a href="<?php echo site_url('/contact') ?>" class="btn">GET IN TOUCH</a>
+            <a href="<?php echo site_url('/get-in-touch') ?>" class="btn">GET IN TOUCH</a>
         </div>
     </section>
 
