@@ -25,4 +25,7 @@
       margin-bottom: 0;
     }
   }
+  .wp-block-spacer ~ p {
+    margin-bottom: 0px;
+  }
 }
