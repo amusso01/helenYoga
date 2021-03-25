@@ -12,13 +12,11 @@
   .info-box {
     min-height: 460px;
     display: flex;
-
     align-items: center;
     flex-direction: column;
     padding: 22px;
     padding-top: 56px;
     text-align: center;
-
     h2 {
       color: $color__blue;
       margin-bottom: 15px;
@@ -29,7 +27,6 @@
       margin-bottom: 30px;
     }
     .btn {
-      margin-top: auto;
       margin-bottom: 30px;
       span {
         display: inline-block;

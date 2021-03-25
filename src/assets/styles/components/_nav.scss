@@ -110,6 +110,7 @@
         align-items: center;
         position: relative;
         backface-visibility: hidden;
+        text-decoration: none;
         @media #{$breakpoint-md-up} {
           min-height: 135px;
           &:hover {

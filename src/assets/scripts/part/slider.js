@@ -7,7 +7,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function slider() {
     const swiper = new SwiperCore('#testimonialSlider', {
-      
+        autoHeight: true,
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',

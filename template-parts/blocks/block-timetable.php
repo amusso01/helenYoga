@@ -56,7 +56,6 @@
     
 
     // Return HTML
-
     ?>
 
     <section class="block-timetable" id="schedule"  style="background:transparent linear-gradient(180deg, <?php echo $backgroudGradient[0]['color'] ?> 0%, <?php echo $backgroudGradient[1]['color'] ?> 49%, <?php echo $backgroudGradient[2]['color'] ?> 100%) 0% 0% no-repeat padding-box;">

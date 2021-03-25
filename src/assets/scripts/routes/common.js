@@ -39,6 +39,20 @@ export default {
 		{
 		  banner();
 		}
+
+		//  READ BLOCK
+		const readBlock = document.getElementById('readBlock');
+		if (typeof(readBlock) != 'undefined' && readBlock != null)
+		{
+		  const readButton = document.getElementById('readMore');
+		  const hiddenText = document.getElementById('readHidden');
+
+		  readButton.addEventListener('click', (e)=>{
+			e.preventDefault();
+			hiddenText.classList.add('reveal');
+			readButton.classList.add('hide');
+		  })
+		}
 	},
 
 	finalize() {

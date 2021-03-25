@@ -26,6 +26,11 @@
     color: $color__text;
     padding-left: 35px;
     padding-right: 35px;
+    &:hover {
+      color: $color__text;
+      -webkit-box-shadow: 0px 10px 15px -7px #8ea8c5;
+      box-shadow: 0px 10px 15px -10px #8ea8c5;
+    }
   }
 }
 

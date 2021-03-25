@@ -96,3 +96,4 @@ require get_template_directory().'/template-parts/blocks/block-timetable.php';
 require get_template_directory().'/template-parts/blocks/block-testimonial.php';
 require get_template_directory().'/template-parts/blocks/block-box-info.php';
 require get_template_directory().'/template-parts/blocks/block-schedule.php';
+require get_template_directory().'/template-parts/blocks/block-read-more.php';
