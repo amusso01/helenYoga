@@ -66,7 +66,6 @@
     <?php if($isSlider) : 
     // Get Vars
     $images = get_field('slider_images');
-    // dd($button)
     ?>
 
     <section class="block-hero">
@@ -116,7 +115,7 @@
             <?php endif ?>
       
             <?php if($hasButton) : ?>
-            <a class="btn btn-white" href="<?php echo $isButtonExternal ? $button['url'] : '#schedule' ?>"><?php echo $isButtonExternal ? $button[''] : 'JUMP TO SCHEDULE' ?> 
+            <a class="btn btn-white" href="<?php echo $isButtonExternal ? $button['url'] : '#schedule' ?>"><?php echo $isButtonExternal ? $button['title'] : 'JUMP TO SCHEDULE' ?> 
             <?php if(!$isButtonExternal): ?>
                 <span><i><?php get_template_part( 'svg-template/svg', 'down-arrow' ) ?></i></span>
             <?php endif; ?>

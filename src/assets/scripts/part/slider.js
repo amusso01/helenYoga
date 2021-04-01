@@ -8,12 +8,13 @@ SwiperCore.use([Navigation, Pagination]);
 export default function slider() {
     const swiper = new SwiperCore('#testimonialSlider', {
         autoHeight: true,
+        loop: true,
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
         },
         autoplay: {
-          delay: 5000,
+          delay: 20000,
           disableOnInteraction: true,
         },
       

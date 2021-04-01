@@ -70,9 +70,6 @@
                         </div>
                     <?php endforeach ?>
                 </div>
-  
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"><?php get_template_part( 'svg-template/svg', 'swiper' ) ?></div>
