@@ -10,7 +10,8 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    display: none;
+    // display: none;
+    min-height: 270px;
     @media #{$breakpoint-sm-up} {
       position: inherit;
       display: block;
@@ -93,6 +94,7 @@
       font-size: 70px;
       text-align: right;
       line-height: 70px;
+      padding-right: 15px;
     }
   }
 }
