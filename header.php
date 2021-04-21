@@ -19,7 +19,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/dist/images/ogLogo.jpg" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri() ?>/dist/images/ogLogo-2.jpg" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<!--=== GMT head ===-->
 	<?php  WPSeed_gtm('head') ?>
